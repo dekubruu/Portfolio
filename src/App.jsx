@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+import Home from './pages/Home'
+import CV from './pages/CV'
+import ProjetProfessionnel from './pages/ProjetProfessionnel'
+import Portfolio from './pages/Portfolio'
+import ThemeDetail from './pages/ThemeDetail'
+import Bilan from './pages/Bilan'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+function ScrollToTop() {
+  const { pathname, hash } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname, hash])
+  return null
 }
 
-export default App
+export default function App() {
+  return (
+    <div className="min-h-screen bg-bg text-text-primary">
+      <ScrollToTop />
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cv" element={<CV />} />
+          <Route path="/projet-professionnel" element={<ProjetProfessionnel />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:slug" element={<ThemeDetail />} />
+          <Route path="/bilan" element={<Bilan />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  )
+}
