@@ -3,130 +3,120 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const profile = {
-  prenom: 'Thomas',
-  nom: 'Renard',
-  titre: "Étudiant BAC 3 — Technologies de l'Informatique",
-  ecole: 'EPHEC Bruxelles',
-  email: 'thomas.renard@ephec.be',
-  telephone: '+32 485 12 34 56',
-  localisation: 'Bruxelles, Belgique',
-  github: 'https://github.com/thomas-renard',
-  linkedin: 'https://linkedin.com/in/thomas-renard',
+  prenom: 'Khasan',
+  nom: 'Aktamirov',
+  titre: "Third year bachelor student — Computer Science",
+  ecole: 'EPHEC Louvain-la-Neuve',
+  email: 'he202425@students.ephec.be',
+  localisation: 'Louvain-la-Neuve, Belgique',
+  github: 'https://github.com/dekubruu',
+  linkedin: 'https://www.linkedin.com/in/khasan-aktamirov-b86788299/',
 
-  objectifProfessionnel: 'Développeur Full-Stack spécialisé en solutions cloud-native',
+  objectifProfessionnel: 'Full stack developer | Network Security | Web/App Scraping & OSINT',
 
   accroche:
-    "Passionné par la conception de systèmes robustes et les architectures modernes, je cherche à intégrer une équipe ambitieuse où je pourrai allier créativité technique et rigueur professionnelle pour construire des produits qui font réellement la différence.",
+    "Tech enthusiast specialized in full stack development. Seeking to join a team that values intelligent automation and technical innovation.",
 
   formation: [
     {
-      diplome: "Bachelier en Technologies de l'Informatique",
+      diplome: "Bachelor in Computer Science",
       ecole: 'EPHEC',
-      lieu: 'Bruxelles',
+      lieu: 'Louvain-la-Neuve',
       periode: '2023 – 2026',
-      statut: 'En cours — BAC 3',
+      statut: 'On going — expected graduation June 2026',
       description:
-        "Formation en développement logiciel, réseaux, bases de données, gestion de projets IT et cybersécurité.",
-    },
-    {
-      diplome: 'CESS — Sciences Générales',
-      ecole: 'Institut Saint-Louis',
-      lieu: 'Bruxelles',
-      periode: '2019 – 2023',
-      statut: 'Diplômé',
-      description: 'Options mathématiques et sciences appliquées.',
+        "Training in web development, mobile applications, networking, databases, IT project management, cybersecurity, and hardware.",
     },
   ],
 
   competencesTechniques: [
-    { categorie: 'Langages', items: ['JavaScript', 'TypeScript', 'Python', 'PHP', 'SQL', 'Bash'] },
+    { categorie: 'Langages', items: ['JavaScript', 'HTML5 / CSS3', 'TypeScript', 'Python', 'SQL', 'Bash'] },
     { categorie: 'Frontend', items: ['React', 'Next.js', 'Tailwind CSS', 'HTML5 / CSS3'] },
-    { categorie: 'Backend', items: ['Node.js', 'Express', 'FastAPI', 'REST APIs'] },
-    { categorie: 'Bases de données', items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'] },
+    { categorie: 'Backend', items: ['Node.js', 'Express'] },
+    { categorie: 'Bases de données', items: ['PostgreSQL', 'MySQL', 'MongoDB'] },
     {
-      categorie: 'Cloud & DevOps',
-      items: ['AWS (EC2, S3, Lambda)', 'Docker', 'GitHub Actions', 'CI/CD', 'Linux'],
+      categorie: 'System & DevOps',
+      items: ['Docker', 'System & Network Administration', 'Web Hosting'],
     },
     { categorie: 'Outils', items: ['Git', 'VS Code', 'Figma', 'Postman', 'Jira'] },
+    {categorie: 'Data', items: ['Automated data extraction / scraping (web/app)'] },
   ],
 
-  niveaux: [
-    { competence: 'Développement Web', niveau: 85 },
-    { competence: 'Bases de données', niveau: 75 },
-    { competence: 'Cloud & DevOps', niveau: 60 },
-    { competence: 'Cybersécurité', niveau: 50 },
-    { competence: 'Réseaux & Systèmes', niveau: 65 },
-    { competence: 'Gestion de projet', niveau: 70 },
-  ],
-
-  softSkills: [
+ softSkills: [
     {
-      nom: 'Travail en équipe',
-      description: 'Habitué à collaborer en méthode Agile/Scrum sur des projets pluridisciplinaires.',
+      nom: 'Teamwork',
+      description: 'Experienced in collaborating using Agile/Scrum methodologies on multidisciplinary projects.',
     },
     {
-      nom: 'Résolution de problèmes',
-      description: 'Approche analytique et structurée face aux défis techniques complexes.',
+      nom: 'Problem-solving',
+      description: 'Analytical and structured approach to complex technical challenges.',
     },
     {
-      nom: 'Adaptabilité',
-      description: 'Capacité à monter en compétences rapidement sur de nouvelles technologies.',
+      nom: 'Adaptability',
+      description: 'Ability to quickly gain proficiency in new technologies.',
     },
     {
       nom: 'Communication',
-      description: "Aisance à vulgariser des concepts techniques auprès de publics non-spécialistes.",
+      description: "Skilled at explaining technical concepts to non-specialist audiences.",
     },
     {
-      nom: 'Autonomie',
-      description: "Capacité à organiser mon travail de façon indépendante et à prendre des initiatives.",
+      nom: 'Autonomy',
+      description: "Ability to organize my work independently and take initiative.",
     },
     {
-      nom: 'Curiosité intellectuelle',
-      description: 'Veille technologique active et apprentissage continu en dehors du cursus.',
+      nom: 'Intellectual curiosity',
+      description: 'Active technology watch and continuous learning beyond formal curriculum.',
     },
   ],
 
   langues: [
-    { langue: 'Français', niveau: 'Langue maternelle', code: 'C2' },
-    { langue: 'Anglais', niveau: 'Avancé — documentation technique', code: 'B2' },
-    { langue: 'Néerlandais', niveau: 'Notions de base', code: 'A2' },
+    { langue: 'English', niveau: 'Advanced', code: 'C1' },
+    { langue: 'French', niveau: 'Native', code: 'C2' },
+    { langue: 'Russian', niveau: 'Native', code: 'C2' },
   ],
 
   experiences: [
-    {
-      poste: 'Développeur Web Junior',
-      entreprise: 'StartupXYZ',
-      lieu: 'Bruxelles',
-      periode: 'Juillet – Août 2024',
-      type: 'Stage',
+        {
+      poste: 'Content Protection Intern',
+      entreprise: 'Motion Picture Association (MPA)',
+      lieu: 'Brussels, Belgium',
+      periode: 'February 2026 – May 2026',
+      type: 'Internship',
       description:
-        "Développement de nouvelles fonctionnalités sur une application React/Node.js. Participation aux sprints Scrum bi-hebdomadaires. Optimisation des requêtes SQL et mise en place d'un pipeline CI/CD avec GitHub Actions.",
+        "Cybersecurity internship covering: API/Web security (Token/MSAL), Hardware Hacking & Reverse Engineering (firmware dumps, UART/JTAG, root access), Android RE (Frida, Burp Suite), data extraction automation, electronics manipulation (soldering, chip readers), and Technical OSINT fundamentals.", 
     },
     {
-      poste: 'Assistant IT Helpdesk',
-      entreprise: 'Cabinet Conseil ABC',
-      lieu: 'Bruxelles',
-      periode: 'Janvier – Juin 2024',
-      type: 'Job étudiant',
+      poste: 'Frontend & BackendDeveloper',
+      entreprise: 'Seneca Polytechnic',
+      lieu: 'Toronto, Canada',
+      periode: 'June 2025',
+      type: 'Summer School',
       description:
-        "Support technique niveau 1 et 2. Gestion du parc informatique (80 postes). Déploiement et configuration de postes Windows. Rédaction de documentation technique.",
-    },
+        "Intensive program focused on mobile development with React Native, including the design and implementation of a crossplatform application.",
+    },  
   ],
 
   projets: [
     {
-      nom: 'EphécTrack',
+      nom: 'EarthHealth',
       description:
-        "Application web de suivi des notes et crédits ECTS pour les étudiants EPHEC. Stack complète React + Express + PostgreSQL avec authentification JWT.",
-      technologies: ['React', 'Node.js', 'PostgreSQL'],
-      lien: 'https://github.com/thomas-renard/ephec-track',
+        "EarthHealth is a mobileapplication designed for hearing health awareness and prevention. It allows users to take a high-frequency hearing test, receive personalized results, measure real-time ambient noise levels, and learn through a gamified educational quiz.",
+      technologies: ['React Native', 'Node.js'],
+      lien: 'https://github.com/dekubruu/Application-Mobile-de-Pr-vention-Auditive',
     },
     {
-      nom: 'DevPortfolio CLI',
+      nom: 'Boite-Alerte',
       description:
-        "Outil CLI en Python pour générer des portfolios statiques à partir d'un fichier JSON. Publié sur PyPI.",
-      technologies: ['Python', 'Typer', 'Jinja2'],
-      lien: 'https://github.com/thomas-renard/devportfolio-cli',
+        "Boite-Alerte is an intelligent mailbox designed to modernize mail reception. The system detects mail arrival in real time, sends instant notifications to the user, and displays custom messages for the mail carrier when the user is unavailable.",
+      technologies: ['ESP32', 'Node.js', 'React', 'MySQL'],
+      lien: 'https://github.com/rayleiighh/Boite-alerte',
+    },
+        {
+      nom: 'PowerTrack',
+      description:
+        "Web application to monitor in real time the power consumption of devices connected through smart power strips.",
+      technologies: ['React', 'Node.js', 'PostgreSQL'],
+      lien: 'https://github.com/rayleiighh/Dev-Web-2024',
     },
   ],
 }

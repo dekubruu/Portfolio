@@ -60,12 +60,13 @@ export default function CV() {
 
         {/* Download */}
         <div className="mb-10">
-          <button
-            onClick={() => alert('Remplacez ce lien par votre CV PDF.')}
-            className="btn-primary"
+          <a
+            href="/image/cv.pdf"
+            download="AKTAMIROV KHASAN CV 2026.pdf"
+            className="btn-primary flex items-center gap-2"
           >
-            <Download className="w-3.5 h-3.5" /> TÉLÉCHARGER LE CV PDF
-          </button>
+            <Download className="w-3.5 h-3.5" /> Download CV PDF
+          </a>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -164,12 +165,7 @@ export default function CV() {
                   </div>
                 ))}
               </div>
-              <div className="space-y-4 pt-5" style={{ borderTop: '1px solid rgba(0,229,255,0.08)' }}>
-                <p className="font-mono text-xs text-text-muted opacity-70">// auto-évaluation des niveaux</p>
-                {profile.niveaux.map((n) => (
-                  <ProgressBar key={n.competence} label={n.competence} value={n.niveau} />
-                ))}
-              </div>
+              
             </CVBlock>
 
             <CVBlock title="Expériences Professionnelles">
