@@ -22,7 +22,7 @@ export default function Portfolio() {
           label="Skills Development Activities"
           title="Portfolio"
           index={3}
-          subtitle="7 themes, 13 activities, 50 hours documented according to EPHEC requirements — reflective analyses included."
+          subtitle=""
         />
 
         {/* Stats — terminal style */}
@@ -107,17 +107,7 @@ export default function Portfolio() {
                     <h3 className="font-semibold text-text-primary text-sm group-hover:text-accent-cyan transition-colors">
                       {theme.titre}
                     </h3>
-                    <span
-                      className="font-mono text-xs px-2 py-0.5"
-                      style={{
-                        borderRadius: '2px',
-                        background: `${hex}15`,
-                        color: hex,
-                        border: `1px solid ${hex}30`,
-                      }}
-                    >
-                      {theme.couleur === 'red' ? 'weakness' : 'strength'}
-                    </span>
+
                   </div>
                   <p className="text-xs text-text-muted leading-relaxed line-clamp-1">
                     {theme.resume}
@@ -135,31 +125,6 @@ export default function Portfolio() {
           })}
         </div>
 
-        {/* EPHEC Compliance */}
-        <div
-          className="mt-12 p-5 font-mono text-xs"
-          style={{
-            background: 'rgba(0,229,255,0.03)',
-            border: '1px solid rgba(0,229,255,0.12)',
-            borderRadius: '4px',
-          }}
-        >
-          <p className="text-accent-cyan opacity-70 tracking-widest mb-3">// EPHEC compliance</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-text-muted">
-            {[
-              '✓  7 themes (minimum 6 required)',
-              '✓  13 distinct activities (minimum 6)',
-              '✓  No theme exceeds 10h',
-              '✓  1 hackathon out of 3 allowed',
-              '✓  2 online training sessions (max. 2)',
-              '✓  1 in-person training session (max. 3)',
-              '✓  Reflective analysis in first person',
-              '✓  Nominative proof for each activity',
-            ].map((line) => (
-              <span key={line} className="opacity-80">{line}</span>
-            ))}
-          </div>
-        </div>
       </Section>
     </div>
   )

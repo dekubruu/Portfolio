@@ -7,7 +7,6 @@ const navLinks = [
   { to: '/cv', label: 'CV' },
   { to: '/projet-professionnel', label: 'Career Plan' },
   { to: '/portfolio', label: 'Portfolio' },
-  { to: '/bilan', label: 'Review' },
 ]
 
 export default function Footer() {

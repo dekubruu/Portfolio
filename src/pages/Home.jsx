@@ -14,7 +14,6 @@ const overviewCards = [
   { to: '/cv', icon: Briefcase, title: 'Curriculum Vitae', desc: 'Education, skills, work experience, and projects.', accent: 'rgba(0,229,255,0.15)', border: 'rgba(0,229,255,0.2)' },
   { to: '/projet-professionnel', icon: Star, title: 'Career Plan', desc: "Career goal, strengths, weaknesses, and action plan.", accent: 'rgba(245,158,11,0.12)', border: 'rgba(245,158,11,0.2)' },
   { to: '/portfolio', icon: BookOpen, title: "Activities Portfolio", desc: '7 themes, 13 activities, and reflective analyses.', accent: 'rgba(192,132,252,0.12)', border: 'rgba(192,132,252,0.2)' },
-  { to: '/bilan', icon: Clock, title: 'Review & Self-Assessment', desc: 'Progress summary and improvement plan.', accent: 'rgba(5,255,161,0.1)', border: 'rgba(5,255,161,0.2)' },
 ]
 
 const stats = [
@@ -43,11 +42,6 @@ export default function Home() {
 
           {/* Terminal window chrome */}
           <div className="flex items-center gap-2 mb-6 font-mono">
-            <div className="flex gap-1.5">
-              <span className="w-2.5 h-2.5 rounded-full bg-red-500/50" />
-              <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/50" />
-              <span className="w-2.5 h-2.5 rounded-full bg-green-500/50" />
-            </div>
             <div
               className="flex-1 h-6 rounded flex items-center px-3 text-xs text-text-muted"
               style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(0,229,255,0.07)' }}

@@ -7,7 +7,7 @@ import CV from './pages/CV'
 import ProjetProfessionnel from './pages/ProjetProfessionnel'
 import Portfolio from './pages/Portfolio'
 import ThemeDetail from './pages/ThemeDetail'
-import Bilan from './pages/Bilan'
+
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
@@ -29,7 +29,6 @@ export default function App() {
           <Route path="/projet-professionnel" element={<ProjetProfessionnel />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:slug" element={<ThemeDetail />} />
-          <Route path="/bilan" element={<Bilan />} />
         </Routes>
       </main>
       <Footer />

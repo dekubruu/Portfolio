@@ -8,7 +8,6 @@ const navLinks = [
   { to: '/cv', label: 'CV', short: 'cv' },
   { to: '/projet-professionnel', label: 'Career Plan', short: 'career' },
   { to: '/portfolio', label: 'Portfolio', short: 'port' },
-  { to: '/bilan', label: 'Review', short: 'review' },
 ]
 
 export default function Navbar() {
