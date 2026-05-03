@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import { profile } from '../../data/profile'
 
 const navLinks = [
-  { to: '/', label: 'Accueil' },
+  { to: '/', label: 'Home' },
   { to: '/cv', label: 'CV' },
-  { to: '/projet-professionnel', label: 'Projet Pro' },
+  { to: '/projet-professionnel', label: 'Career Plan' },
   { to: '/portfolio', label: 'Portfolio' },
-  { to: '/bilan', label: 'Bilan' },
+  { to: '/bilan', label: 'Review' },
 ]
 
 export default function Footer() {

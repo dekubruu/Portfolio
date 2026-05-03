@@ -6,7 +6,6 @@ import Section, { SectionHeader } from '../components/ui/Section'
 
 const iconComponents = { Code2, Shield, Cloud, Brain, Layout, Network, Users }
 
-// Map colour name → actual hex for the glow line
 const accentHex = {
   cyan: '#00e5ff', red: '#ff4d6d', blue: '#60a5fa',
   purple: '#c084fc', green: '#05ffa1', orange: '#fb923c', yellow: '#fbbf24',
@@ -20,10 +19,10 @@ export default function Portfolio() {
     <div className="pt-14">
       <Section>
         <SectionHeader
-          label="Activités d'Acquisition de Compétences"
+          label="Skills Development Activities"
           title="Portfolio"
           index={3}
-          subtitle="7 thèmes, 13 activités, 50 heures documentées selon les exigences EPHEC — analyses réflexives incluses."
+          subtitle="7 themes, 13 activities, 50 hours documented according to EPHEC requirements — reflective analyses included."
         />
 
         {/* Stats — terminal style */}
@@ -32,10 +31,10 @@ export default function Portfolio() {
           style={{ borderColor: 'rgba(0,229,255,0.12)', borderRadius: '4px', overflow: 'hidden' }}
         >
           {[
-            { val: themes.length, label: 'thèmes', note: 'min. 6 requis' },
-            { val: nbActivites, label: 'activités', note: 'min. 6 requises' },
-            { val: total + 'h', label: 'apprentissage', note: '~8h/thème' },
-            { val: '≤10h', label: 'max/thème', note: 'conforme EPHEC' },
+            { val: themes.length, label: 'themes', note: 'min. 6 required' },
+            { val: nbActivites, label: 'activities', note: 'min. 6 required' },
+            { val: total + 'h', label: 'learning', note: '~8h/theme' },
+            { val: '≤10h', label: 'max/theme', note: 'EPHEC compliant' },
           ].map((s, i) => (
             <div
               key={s.label}
@@ -64,7 +63,7 @@ export default function Portfolio() {
         >
           <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(90deg,transparent,rgba(0,229,255,0.3),transparent)' }} />
           <p className="font-mono text-xs text-accent-cyan tracking-widest mb-4 opacity-70">
-            // synthèse globale
+            // global synthesis
           </p>
           {syntheseGlobale.split('\n\n').map((p, i) => (
             <p key={i} className="text-text-secondary leading-relaxed mb-3 last:mb-0 text-sm">
@@ -76,7 +75,7 @@ export default function Portfolio() {
         {/* Themes list */}
         <div className="flex items-center gap-3 mb-6">
           <span className="font-mono text-xs text-accent-cyan opacity-50">▶</span>
-          <h2 className="font-mono text-xs tracking-widest uppercase text-text-muted">Les 7 Thèmes</h2>
+          <h2 className="font-mono text-xs tracking-widest uppercase text-text-muted">The 7 Themes</h2>
           <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg, rgba(0,229,255,0.15), transparent)' }} />
         </div>
 
@@ -117,7 +116,7 @@ export default function Portfolio() {
                         border: `1px solid ${hex}30`,
                       }}
                     >
-                      {theme.couleur === 'red' ? 'faiblesse' : 'force'}
+                      {theme.couleur === 'red' ? 'weakness' : 'strength'}
                     </span>
                   </div>
                   <p className="text-xs text-text-muted leading-relaxed line-clamp-1">
@@ -145,17 +144,17 @@ export default function Portfolio() {
             borderRadius: '4px',
           }}
         >
-          <p className="text-accent-cyan opacity-70 tracking-widest mb-3">// conformité EPHEC</p>
+          <p className="text-accent-cyan opacity-70 tracking-widest mb-3">// EPHEC compliance</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-text-muted">
             {[
-              '✓  7 thèmes (minimum 6 requis)',
-              '✓  13 activités distinctes (minimum 6)',
-              '✓  Aucun thème ne dépasse 10h',
-              '✓  1 hackathon sur 3 autorisés',
-              '✓  2 formations distanciel (max. 2)',
-              '✓  1 formation présentiel (max. 3)',
-              '✓  Analyse réflexive 1ère personne',
-              '✓  Preuve nominative pour chaque activité',
+              '✓  7 themes (minimum 6 required)',
+              '✓  13 distinct activities (minimum 6)',
+              '✓  No theme exceeds 10h',
+              '✓  1 hackathon out of 3 allowed',
+              '✓  2 online training sessions (max. 2)',
+              '✓  1 in-person training session (max. 3)',
+              '✓  Reflective analysis in first person',
+              '✓  Nominative proof for each activity',
             ].map((line) => (
               <span key={line} className="opacity-80">{line}</span>
             ))}

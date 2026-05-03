@@ -42,7 +42,7 @@ function FaiblesseCard({ titre, description, plan }) {
         </div>
         <p className="text-xs text-text-muted leading-relaxed mb-3">{description}</p>
         <div className="pl-2" style={{ borderLeft: '1px solid rgba(245,158,11,0.2)' }}>
-          <p className="font-mono text-xs text-amber-400 opacity-70 mb-0.5">// plan d'action</p>
+          <p className="font-mono text-xs text-amber-400 opacity-70 mb-0.5">// action plan</p>
           <p className="text-xs text-text-muted leading-relaxed">{plan}</p>
         </div>
       </div>
@@ -51,9 +51,9 @@ function FaiblesseCard({ titre, description, plan }) {
 }
 
 const horizonData = [
-  { hex: '#00e5ff', horizon: 'COURT_TERME', periode: '0–2 ans' },
-  { hex: '#60a5fa', horizon: 'MOYEN_TERME', periode: '2–5 ans' },
-  { hex: '#c084fc', horizon: 'LONG_TERME', periode: '5+ ans' },
+  { hex: '#00e5ff', horizon: 'SHORT_TERM', periode: '0–2 years' },
+  { hex: '#60a5fa', horizon: 'MID_TERM', periode: '2–5 years' },
+  { hex: '#c084fc', horizon: 'LONG_TERM', periode: '5+ years' },
 ]
 
 export default function ProjetProfessionnel() {
@@ -62,7 +62,7 @@ export default function ProjetProfessionnel() {
   return (
     <div className="pt-14">
       <Section>
-        <SectionHeader label="Projet Professionnel" title="Mon Objectif de Carrière" index={2} />
+        <SectionHeader label="Career Plan" title="My Career Goal" index={2} />
 
         {/* Objective terminal block */}
         <div
@@ -78,7 +78,7 @@ export default function ProjetProfessionnel() {
             <div style={{ width: 36, height: 36, background: 'rgba(0,229,255,0.1)', border: '1px solid rgba(0,229,255,0.2)', borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Target className="w-4 h-4 text-accent-cyan" />
             </div>
-            <span className="font-mono text-xs text-accent-cyan opacity-60 tracking-widest">// objectif_professionnel</span>
+            <span className="font-mono text-xs text-accent-cyan opacity-60 tracking-widest">// professional_goal</span>
           </div>
           <h2 className="text-2xl md:text-3xl font-extrabold text-text-bright mb-5">{objectif.titre}</h2>
           {objectif.description.split('\n\n').map((p, i) => (
@@ -97,13 +97,13 @@ export default function ProjetProfessionnel() {
           ))}
         </div>
 
-        {/* Forces & Faiblesses */}
+        {/* Strengths & Weaknesses */}
         <div className="mb-14">
-          <h2 className="text-xl font-bold text-text-bright mb-8">Forces & Faiblesses</h2>
+          <h2 className="text-xl font-bold text-text-bright mb-8">Strengths & Weaknesses</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <p className="font-mono text-xs text-accent-green tracking-widest opacity-70 mb-4">
-                ▶ FORCES IDENTIFIÉES
+                ▶ IDENTIFIED STRENGTHS
               </p>
               <div className="space-y-3">
                 {forces.map((f) => <ForceCard key={f.titre} {...f} />)}
@@ -111,7 +111,7 @@ export default function ProjetProfessionnel() {
             </div>
             <div>
               <p className="font-mono text-xs text-amber-400 tracking-widest opacity-70 mb-4">
-                △ FAIBLESSES & PLANS D'ACTION
+                △ WEAKNESSES & ACTION PLANS
               </p>
               <div className="space-y-3">
                 {faiblesses.map((f) => <FaiblesseCard key={f.titre} {...f} />)}
@@ -122,7 +122,7 @@ export default function ProjetProfessionnel() {
 
         {/* Career timeline */}
         <div className="mb-14">
-          <h2 className="text-xl font-bold text-text-bright mb-8">Plan de Carrière</h2>
+          <h2 className="text-xl font-bold text-text-bright mb-8">Career Plan</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {metiers.map((m, i) => {
               const { hex } = horizonData[i]
@@ -160,12 +160,12 @@ export default function ProjetProfessionnel() {
 
         {/* Action plan */}
         <div className="mb-14">
-          <h2 className="text-xl font-bold text-text-bright mb-8">Plan d'Action Concret</h2>
+          <h2 className="text-xl font-bold text-text-bright mb-8">Concrete Action Plan</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { label: 'COURT_TERME', items: planAction.courtTerme, hex: '#00e5ff' },
-              { label: 'MOYEN_TERME', items: planAction.moyenTerme, hex: '#60a5fa' },
-              { label: 'LONG_TERME', items: planAction.longTerme, hex: '#c084fc' },
+              { label: 'SHORT_TERM', items: planAction.courtTerme, hex: '#00e5ff' },
+              { label: 'MID_TERM', items: planAction.moyenTerme, hex: '#60a5fa' },
+              { label: 'LONG_TERM', items: planAction.longTerme, hex: '#c084fc' },
             ].map((col) => (
               <div key={col.label}>
                 <p className="font-mono text-xs tracking-widest mb-4 opacity-70" style={{ color: col.hex }}>
@@ -193,7 +193,7 @@ export default function ProjetProfessionnel() {
           style={{ background: 'rgba(10,22,40,0.8)', border: '1px solid rgba(0,229,255,0.12)', borderRadius: '6px' }}
         >
           <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(90deg,transparent,rgba(0,229,255,0.3),transparent)' }} />
-          <p className="font-mono text-xs text-accent-cyan opacity-60 tracking-widest mb-4">// synthèse</p>
+          <p className="font-mono text-xs text-accent-cyan opacity-60 tracking-widest mb-4">// synthesis</p>
           {synthese.split('\n\n').map((p, i) => (
             <p key={i} className="text-text-secondary leading-relaxed mb-3 last:mb-0 text-sm">{p}</p>
           ))}

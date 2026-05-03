@@ -1,70 +1,70 @@
 export const bilan = {
-  synthese: `Cette année de BAC 3 a été celle de la consolidation et de la prise de recul. Après deux années à accumuler des connaissances techniques dans un cadre académique, j'ai cherché à ancrer ces connaissances dans des contextes réels, à identifier mes manques, et à construire un plan de développement professionnel cohérent.
+  synthese: `This BAC 3 year was one of consolidation and stepping back. After two years of accumulating technical knowledge in an academic setting, I sought to anchor that knowledge in real-world contexts, identify my gaps, and build a coherent professional development plan.
 
-Les sept thèmes et treize activités documentés dans ce portfolio ne sont pas une liste exhaustive de tout ce que j'ai fait — c'est une sélection raisonnée d'expériences qui ont réellement changé quelque chose dans ma façon de penser et de travailler.`,
+The seven themes and thirteen activities documented in this portfolio are not an exhaustive list of everything I did — they are a reasoned selection of experiences that genuinely changed something in the way I think and work.`,
 
   apprentissagesCles: [
     {
-      titre: 'La sécurité n\'est pas optionnelle',
+      titre: 'Security is not optional',
       description:
-        "La conférence cybersécurité et les exercices TryHackMe ont radicalement changé ma façon d'écrire du code. Je pense maintenant aux vecteurs d'attaque dès la conception d'une fonctionnalité, et non plus comme une étape finale.",
+        "The cybersecurity conference and TryHackMe exercises radically changed how I write code. I now think about attack vectors from the moment I design a feature, no longer as a final step.",
     },
     {
-      titre: 'Le cloud change l\'économie du déploiement',
+      titre: 'Cloud changes the economics of deployment',
       description:
-        "La formation AWS et le projet CI/CD m'ont montré que le déploiement n'est plus une opération manuelle ponctuelle mais un processus automatisé, reproductible et fiable. Cette vision a transformé mon rapport à la mise en production.",
+        "The AWS training and the CI/CD project showed me that deployment is no longer a one-off manual operation but an automated, reproducible, and reliable process. This vision transformed my relationship with production deployments.",
     },
     {
-      titre: "L'IA est un outil, pas une finalité",
+      titre: 'AI is a tool, not an end in itself',
       description:
-        "Le hackathon m'a confronté aux limites et aux risques éthiques des systèmes IA. Je suis maintenant plus nuancé : l'IA est puissante mais doit être utilisée avec discernement, transparence et sens des responsabilités.",
+        "The hackathon confronted me with the limits and ethical risks of AI systems. I am now more measured: AI is powerful but must be used with discernment, transparency, and a sense of responsibility.",
     },
     {
-      titre: 'La communication est une compétence technique',
+      titre: 'Communication is a technical skill',
       description:
-        "Les sessions sur la communication professionnelle m'ont convaincu que communiquer efficacement est aussi important que maîtriser un framework. Cette compétence transversale conditionne l'évolution vers des rôles de leadership.",
+        "The professional communication sessions convinced me that communicating effectively is as important as mastering a framework. This transversal skill conditions progression toward leadership roles.",
     },
     {
-      titre: 'La pratique prime sur la théorie',
+      titre: 'Practice takes precedence over theory',
       description:
-        "Le bug de firewall que j'ai mis une heure à comprendre m'a appris les réseaux plus profondément que n'importe quel cours magistral. L'apprentissage le plus durable vient de la confrontation directe avec des problèmes réels.",
+        "The firewall bug I spent an hour understanding taught me more about networking than any lecture ever could. The most lasting learning comes from direct confrontation with real problems.",
     },
     {
-      titre: 'Le réseau professionnel se construit tôt',
+      titre: 'Professional networking is built early',
       description:
-        "Le Job Day et le salon BeJobs m'ont appris que le réseau ne se construit pas au moment où on en a besoin, mais en permanence. Chaque conversation professionnelle est un investissement à long terme.",
+        "The Job Day and BeJobs fair taught me that a network is not built when you need it, but continuously. Every professional conversation is a long-term investment.",
     },
   ],
 
   progressionCompetences: [
-    { competence: 'Développement Web (React/Next.js)', avant: 65, apres: 85 },
+    { competence: 'Web Development (React/Next.js)', avant: 65, apres: 85 },
     { competence: 'Cloud & DevOps', avant: 20, apres: 55 },
-    { competence: 'Cybersécurité', avant: 15, apres: 45 },
-    { competence: 'Communication professionnelle', avant: 40, apres: 60 },
-    { competence: 'Gestion de projet Agile', avant: 50, apres: 70 },
-    { competence: 'Réseaux & Systèmes', avant: 45, apres: 65 },
+    { competence: 'Cybersecurity', avant: 15, apres: 45 },
+    { competence: 'Professional Communication', avant: 40, apres: 60 },
+    { competence: 'Agile Project Management', avant: 50, apres: 70 },
+    { competence: 'Networking & Systems', avant: 45, apres: 65 },
   ],
 
   lacunesRestantes: [
-    "TypeScript avancé — les types génériques et les patterns avancés restent à approfondir",
-    "Tests automatisés — mes connaissances en testing (unitaire, intégration, E2E) sont encore superficielles",
-    "Kubernetes — la prochaine étape logique après Docker et le CI/CD de base",
-    "Communication orale en public — un travail continu qui demande de la pratique régulière",
+    "Advanced TypeScript — generic types and advanced patterns still need to be deepened",
+    "Automated testing — my knowledge of testing (unit, integration, E2E) is still shallow",
+    "Kubernetes — the logical next step after Docker and basic CI/CD",
+    "Public speaking — an ongoing effort that requires regular practice",
   ],
 
-  planAmelioration: `Pour combler ces lacunes, je m'engage sur les actions concrètes suivantes dans les six prochains mois :
+  planAmelioration: `To address these gaps, I commit to the following concrete actions over the next six months:
 
-**TypeScript** : Refactorer mon projet EphécTrack en TypeScript strict, avec des types complets et zéro usage de any. Délai : fin janvier 2026.
+**TypeScript**: Refactor my EphécTrack project to strict TypeScript, with complete types and zero use of any. Deadline: end of January 2026.
 
-**Tests** : Suivre la formation "Testing JavaScript" de Kent C. Dodds et atteindre 80% de couverture sur EphécTrack. Délai : mars 2026.
+**Testing**: Complete Kent C. Dodds' "Testing JavaScript" course and reach 80% coverage on EphécTrack. Deadline: March 2026.
 
-**Kubernetes** : Déployer une application sur un cluster K3s personnel après mon stage de fin d'études. Délai : été 2026.
+**Kubernetes**: Deploy an application on a personal K3s cluster after my final internship. Deadline: summer 2026.
 
-**Communication** : Proposer une présentation technique lors d'un événement EPHEC Tech Club. L'objectif est de dépasser l'inconfort du public en créant des situations d'exposition régulières et progressives. Délai : courant 2026.`,
+**Communication**: Propose a technical presentation at an EPHEC Tech Club event. The goal is to overcome the discomfort of speaking in public by creating regular and progressive exposure opportunities. Deadline: during 2026.`,
 
-  reflexionFinale: `Ce portfolio est, au fond, un portrait de moi en train d'apprendre. Chaque activité documentée ici représente un moment où j'ai été confronté à quelque chose que je ne savais pas, où j'ai dû m'adapter, réfléchir, parfois échouer, et en tirer des leçons concrètes.
+  reflexionFinale: `This portfolio is, at its core, a portrait of me in the process of learning. Every activity documented here represents a moment when I was confronted with something I did not know, when I had to adapt, reflect, sometimes fail, and draw concrete lessons.
 
-Ce que je retiens de cette démarche réflexive, c'est que l'apprentissage le plus durable ne vient pas des cours mais des expériences : le bug de firewall que j'ai mis une heure à comprendre m'a appris les réseaux plus profondément que n'importe quel cours. Le hackathon m'a appris la gestion de projet et la communication plus efficacement qu'un séminaire théorique.
+What I take away from this reflective process is that the most lasting learning does not come from courses but from experiences: the firewall bug I spent an hour understanding taught me more about networking than any lecture. The hackathon taught me project management and communication more effectively than any theoretical seminar.
 
-Je termine cette année avec une conviction claire : je veux être développeur Full-Stack, je sais pourquoi, et je sais ce que je dois encore construire pour y arriver. Ce portfolio est à la fois un bilan honnête et un point de départ motivé.`,
+I finish this year with a clear conviction: I want to be a Full-Stack developer, I know why, and I know what I still need to build to get there. This portfolio is both an honest assessment and a motivated starting point.`,
 }

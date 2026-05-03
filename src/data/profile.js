@@ -8,7 +8,7 @@ export const profile = {
   titre: "Third year bachelor student — Computer Science",
   ecole: 'EPHEC Louvain-la-Neuve',
   email: 'he202425@students.ephec.be',
-  localisation: 'Louvain-la-Neuve, Belgique',
+  localisation: 'Louvain-la-Neuve, Belgium',
   github: 'https://github.com/dekubruu',
   linkedin: 'https://www.linkedin.com/in/khasan-aktamirov-b86788299/',
 
@@ -33,12 +33,12 @@ export const profile = {
     { categorie: 'Langages', items: ['JavaScript', 'HTML5 / CSS3', 'TypeScript', 'Python', 'SQL', 'Bash'] },
     { categorie: 'Frontend', items: ['React', 'Next.js', 'Tailwind CSS', 'HTML5 / CSS3'] },
     { categorie: 'Backend', items: ['Node.js', 'Express'] },
-    { categorie: 'Bases de données', items: ['PostgreSQL', 'MySQL', 'MongoDB'] },
+    { categorie: 'Databases', items: ['PostgreSQL', 'MySQL', 'MongoDB'] },
     {
       categorie: 'System & DevOps',
       items: ['Docker', 'System & Network Administration', 'Web Hosting'],
     },
-    { categorie: 'Outils', items: ['Git', 'VS Code', 'Figma', 'Postman', 'Jira'] },
+    { categorie: 'Tools', items: ['Git', 'VS Code', 'Figma', 'Postman', 'Jira'] },
     {categorie: 'Data', items: ['Automated data extraction / scraping (web/app)'] },
   ],
 

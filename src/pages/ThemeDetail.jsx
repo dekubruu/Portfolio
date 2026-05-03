@@ -64,19 +64,19 @@ function ActivityCard({ activite, hex, c }) {
         >
           <Clock className="w-3.5 h-3.5" style={{ color: hex }} />
           <span className="text-xl font-bold" style={{ color: hex }}>{activite.heuresComptees}</span>
-          <span className="text-xs text-text-muted">heures</span>
+          <span className="text-xs text-text-muted">hours</span>
         </div>
       </div>
 
       {/* Body */}
       <div className="px-6 py-6">
-        <ReflexiveBlock icon={FileText} label="// contexte & cadre" hex={hex}>
+        <ReflexiveBlock icon={FileText} label="// context & framework" hex={hex}>
           {activite.contexte.split('\n\n').map((p, i) => (
             <p key={i} className="text-sm text-text-secondary leading-relaxed">{p}</p>
           ))}
         </ReflexiveBlock>
 
-        <ReflexiveBlock icon={BookOpen} label="// faits & apprentissages" hex="#60a5fa">
+        <ReflexiveBlock icon={BookOpen} label="// facts & learnings" hex="#60a5fa">
           {activite.apprentissages.split('\n\n').map((p, i) => (
             <p key={i} className="text-sm text-text-secondary leading-relaxed">{p}</p>
           ))}
@@ -94,7 +94,7 @@ function ActivityCard({ activite, hex, c }) {
           <div className="absolute top-0 left-0 w-0.5 h-full" style={{ background: `linear-gradient(to bottom, ${hex}, ${hex}20)` }} />
           <div className="flex items-center gap-2 font-mono text-xs mb-4 pl-3" style={{ color: hex, opacity: 0.8 }}>
             <Lightbulb className="w-3.5 h-3.5" />
-            <span className="tracking-widest">// analyse réflexive — première personne (je)</span>
+            <span className="tracking-widest">// reflective analysis — first person (I)</span>
           </div>
           <div className="pl-3 space-y-3">
             {activite.analyse.split('\n\n').map((p, i) => (
@@ -103,7 +103,7 @@ function ActivityCard({ activite, hex, c }) {
           </div>
         </div>
 
-        <ReflexiveBlock icon={Link2} label="// lien avec projet professionnel" hex="#f59e0b">
+        <ReflexiveBlock icon={Link2} label="// link with professional project" hex="#f59e0b">
           <p className="text-sm text-text-secondary leading-relaxed">{activite.lienObjectif}</p>
         </ReflexiveBlock>
 
@@ -118,7 +118,7 @@ function ActivityCard({ activite, hex, c }) {
         >
           <ImageIcon className="w-3.5 h-3.5 text-text-muted flex-shrink-0 mt-0.5" />
           <div>
-            <span className="text-text-muted tracking-widest block mb-1">preuve_participation:</span>
+            <span className="text-text-muted tracking-widest block mb-1">proof_of_participation:</span>
             <span className="text-text-secondary leading-relaxed">{activite.preuve}</span>
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function ThemeDetail() {
   if (!theme) {
     return (
       <div className="pt-32 text-center font-mono">
-        <p className="text-text-muted mb-4 text-sm">404 — thème introuvable.</p>
+        <p className="text-text-muted mb-4 text-sm">404 — theme not found.</p>
         <Link to="/portfolio" className="text-accent-cyan hover:underline text-xs">
           ← cd ../portfolio
         </Link>
@@ -181,18 +181,18 @@ export default function ThemeDetail() {
                 <span className="flex items-center gap-1.5 text-text-secondary">
                   <Clock className="w-3.5 h-3.5" />
                   <strong style={{ color: hex }}>{theme.heuresTotal}h</strong>
-                  <span className="text-text-muted text-xs">au total</span>
+                  <span className="text-text-muted text-xs">total</span>
                 </span>
                 <span className="flex items-center gap-1.5 text-text-secondary">
                   <FileText className="w-3.5 h-3.5" />
                   <strong>{theme.activites.length}</strong>
-                  <span className="text-text-muted text-xs">activité{theme.activites.length > 1 ? 's' : ''}</span>
+                  <span className="text-text-muted text-xs">activit{theme.activites.length > 1 ? 'ies' : 'y'}</span>
                 </span>
               </div>
             </div>
           </div>
           <div className="mt-5 pt-5" style={{ borderTop: `1px solid ${hex}10` }}>
-            <p className="font-mono text-xs text-text-muted mb-1">// lien avec projet professionnel</p>
+            <p className="font-mono text-xs text-text-muted mb-1">// link with professional project</p>
             <p className="text-sm text-text-secondary italic">{theme.lienForce}</p>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function ThemeDetail() {
             <div key={activite.id}>
               <div className="flex items-center gap-3 mb-4 font-mono text-xs text-text-muted">
                 <span style={{ color: hex, opacity: 0.6 }}>▶</span>
-                <span>activite_{String(i + 1).padStart(2, '0')}.md</span>
+                <span>activity_{String(i + 1).padStart(2, '0')}.md</span>
                 <div className="flex-1 h-px opacity-20" style={{ background: hex }} />
               </div>
               <ActivityCard activite={activite} hex={hex} c={c} />

@@ -9,8 +9,8 @@ export default function Bilan() {
   return (
     <div className="pt-14">
       <Section>
-        <SectionHeader label="Auto-Évaluation" title="Bilan de l'Année" index={4}
-          subtitle="Synthèse honnête de ma progression, identification de mes lacunes et plan d'amélioration concret."
+        <SectionHeader label="Self-Assessment" title="Year-End Review" index={4}
+          subtitle="An honest assessment of my progress, identification of gaps, and a concrete improvement plan."
         />
 
         {/* Synthesis */}
@@ -19,7 +19,7 @@ export default function Bilan() {
           style={{ background: 'rgba(10,22,40,0.8)', border: '1px solid rgba(0,229,255,0.12)', borderRadius: '4px' }}
         >
           <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(90deg,transparent,rgba(0,229,255,0.3),transparent)' }} />
-          <p className="font-mono text-xs text-accent-cyan opacity-60 tracking-widest mb-4">// synthèse_générale</p>
+          <p className="font-mono text-xs text-accent-cyan opacity-60 tracking-widest mb-4">// general_synthesis</p>
           {synthese.split('\n\n').map((p, i) => (
             <p key={i} className="text-text-secondary leading-relaxed mb-3 last:mb-0">{p}</p>
           ))}
@@ -29,7 +29,7 @@ export default function Bilan() {
         <div className="mb-14">
           <div className="flex items-center gap-2 mb-6">
             <CheckCircle className="w-4 h-4 text-accent-green" />
-            <h2 className="text-xl font-bold text-text-bright">Apprentissages Clés</h2>
+            <h2 className="text-xl font-bold text-text-bright">Key Learnings</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {apprentissagesCles.map((item, i) => (
@@ -54,14 +54,14 @@ export default function Bilan() {
         <div className="mb-14">
           <div className="flex items-center gap-2 mb-6">
             <TrendingUp className="w-4 h-4 text-accent-cyan" />
-            <h2 className="text-xl font-bold text-text-bright">Progression des Compétences</h2>
+            <h2 className="text-xl font-bold text-text-bright">Skill Progression</h2>
           </div>
           <div
             className="p-7 relative overflow-hidden"
             style={{ background: 'rgba(10,22,40,0.7)', border: '1px solid rgba(0,229,255,0.1)', borderRadius: '4px' }}
           >
             <p className="font-mono text-xs text-text-muted mb-6">
-              // avant vs. après — auto-évaluation (0–100%)
+              // before vs. after — self-assessment (0–100%)
             </p>
             <div className="space-y-6">
               {progressionCompetences.map((item) => (
@@ -75,7 +75,7 @@ export default function Bilan() {
         <div className="mb-14">
           <div className="flex items-center gap-2 mb-6">
             <AlertCircle className="w-4 h-4 text-amber-400" />
-            <h2 className="text-xl font-bold text-text-bright">Lacunes Restantes</h2>
+            <h2 className="text-xl font-bold text-text-bright">Remaining Gaps</h2>
           </div>
           <div className="space-y-2.5">
             {lacunesRestantes.map((item, i) => (
@@ -95,7 +95,7 @@ export default function Bilan() {
         <div className="mb-14">
           <div className="flex items-center gap-2 mb-6">
             <Target className="w-4 h-4 text-accent-cyan" />
-            <h2 className="text-xl font-bold text-text-bright">Plan d'Amélioration</h2>
+            <h2 className="text-xl font-bold text-text-bright">Improvement Plan</h2>
           </div>
           <div
             className="relative p-6 overflow-hidden"
@@ -133,7 +133,7 @@ export default function Bilan() {
         >
           <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(90deg,transparent,rgba(0,229,255,0.5),transparent)' }} />
           <p className="font-mono text-xs text-accent-cyan opacity-60 tracking-widest mb-5">
-            // réflexion_finale — première personne
+            // final_reflection — first person
           </p>
           {reflexionFinale.split('\n\n').map((p, i) => (
             <p key={i} className="text-text-secondary leading-relaxed mb-4 last:mb-0">{p}</p>

@@ -56,7 +56,7 @@ export default function CV() {
   return (
     <div className="pt-14">
       <Section>
-        <SectionHeader label="Curriculum Vitae" title="Mon Parcours" index={0} />
+        <SectionHeader label="Curriculum Vitae" title="My Background" index={0} />
 
         {/* Download */}
         <div className="mb-10">
@@ -108,7 +108,7 @@ export default function CV() {
               </div>
             </div>
 
-            <CVBlock title="Formation">
+            <CVBlock title="Education">
               {profile.formation.map((f, i) => (
                 <TimelineItem
                   key={i}
@@ -121,7 +121,7 @@ export default function CV() {
               ))}
             </CVBlock>
 
-            <CVBlock title="Langues">
+            <CVBlock title="Languages">
               <div className="space-y-3">
                 {profile.langues.map((l) => (
                   <div key={l.langue} className="flex items-center justify-between">
@@ -154,7 +154,7 @@ export default function CV() {
 
           {/* ── RIGHT ────────────────────────────── */}
           <div className="lg:col-span-2">
-            <CVBlock title="Compétences Techniques">
+            <CVBlock title="Technical Skills">
               <div className="space-y-5 mb-6">
                 {profile.competencesTechniques.map((cat) => (
                   <div key={cat.categorie}>
@@ -168,7 +168,7 @@ export default function CV() {
               
             </CVBlock>
 
-            <CVBlock title="Expériences Professionnelles">
+            <CVBlock title="Work Experience">
               {profile.experiences.map((exp, i) => (
                 <TimelineItem
                   key={i}
@@ -180,7 +180,7 @@ export default function CV() {
               ))}
             </CVBlock>
 
-            <CVBlock title="Projets Personnels">
+            <CVBlock title="Personal Projects">
               <div className="space-y-3">
                 {profile.projets.map((proj) => (
                   <div

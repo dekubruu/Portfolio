@@ -58,15 +58,15 @@ export const colorMap = {
 }
 
 export const typeBadgeMap = {
-  distanciel: 'bg-blue-400/15 text-blue-300 border border-blue-400/30',
-  présentiel: 'bg-green-400/15 text-green-300 border border-green-400/30',
+  online: 'bg-blue-400/15 text-blue-300 border border-blue-400/30',
+  'in-person': 'bg-green-400/15 text-green-300 border border-green-400/30',
   hackathon: 'bg-purple-400/15 text-purple-300 border border-purple-400/30',
-  projet: 'bg-orange-400/15 text-orange-300 border border-orange-400/30',
-  conférence: 'bg-cyan-400/15 text-cyan-300 border border-cyan-400/30',
+  project: 'bg-orange-400/15 text-orange-300 border border-orange-400/30',
+  conference: 'bg-cyan-400/15 text-cyan-300 border border-cyan-400/30',
   certification: 'bg-amber-400/15 text-amber-300 border border-amber-400/30',
-  visite: 'bg-teal-400/15 text-teal-300 border border-teal-400/30',
-  événement: 'bg-rose-400/15 text-rose-300 border border-rose-400/30',
-  salon: 'bg-pink-400/15 text-pink-300 border border-pink-400/30',
+  visit: 'bg-teal-400/15 text-teal-300 border border-teal-400/30',
+  event: 'bg-rose-400/15 text-rose-300 border border-rose-400/30',
+  'career fair': 'bg-pink-400/15 text-pink-300 border border-pink-400/30',
 }
 
 export function totalHeures(themes) {

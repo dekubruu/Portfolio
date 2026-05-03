@@ -6,9 +6,9 @@ import { profile } from '../../data/profile'
 const navLinks = [
   { to: '/', label: 'Home', short: '~' },
   { to: '/cv', label: 'CV', short: 'cv' },
-  { to: '/projet-professionnel', label: 'Projet Pro', short: 'proj' },
+  { to: '/projet-professionnel', label: 'Career Plan', short: 'career' },
   { to: '/portfolio', label: 'Portfolio', short: 'port' },
-  { to: '/bilan', label: 'Bilan', short: 'bilan' },
+  { to: '/bilan', label: 'Review', short: 'review' },
 ]
 
 export default function Navbar() {

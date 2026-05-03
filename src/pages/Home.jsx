@@ -11,16 +11,16 @@ import Section, { SectionHeader } from '../components/ui/Section'
 const iconComponents = { Code2, Shield, Cloud, Brain, Layout, Network, Users }
 
 const overviewCards = [
-  { to: '/cv', icon: Briefcase, title: 'Curriculum Vitae', desc: 'Formation, compétences, expériences et projets.', accent: 'rgba(0,229,255,0.15)', border: 'rgba(0,229,255,0.2)' },
-  { to: '/projet-professionnel', icon: Star, title: 'Projet Professionnel', desc: "Objectif de carrière, forces, faiblesses et plan d'action.", accent: 'rgba(245,158,11,0.12)', border: 'rgba(245,158,11,0.2)' },
-  { to: '/portfolio', icon: BookOpen, title: "Portfolio d'Activités", desc: '7 thèmes, 13 activités et analyses réflexives.', accent: 'rgba(192,132,252,0.12)', border: 'rgba(192,132,252,0.2)' },
-  { to: '/bilan', icon: Clock, title: 'Bilan & Auto-Évaluation', desc: 'Synthèse de la progression et plan amélioration.', accent: 'rgba(5,255,161,0.1)', border: 'rgba(5,255,161,0.2)' },
+  { to: '/cv', icon: Briefcase, title: 'Curriculum Vitae', desc: 'Education, skills, work experience, and projects.', accent: 'rgba(0,229,255,0.15)', border: 'rgba(0,229,255,0.2)' },
+  { to: '/projet-professionnel', icon: Star, title: 'Career Plan', desc: "Career goal, strengths, weaknesses, and action plan.", accent: 'rgba(245,158,11,0.12)', border: 'rgba(245,158,11,0.2)' },
+  { to: '/portfolio', icon: BookOpen, title: "Activities Portfolio", desc: '7 themes, 13 activities, and reflective analyses.', accent: 'rgba(192,132,252,0.12)', border: 'rgba(192,132,252,0.2)' },
+  { to: '/bilan', icon: Clock, title: 'Review & Self-Assessment', desc: 'Progress summary and improvement plan.', accent: 'rgba(5,255,161,0.1)', border: 'rgba(5,255,161,0.2)' },
 ]
 
 const stats = [
-  { value: themes.length, label: 'THÈMES', unit: '' },
-  { value: totalActivites(themes), label: 'ACTIVITÉS', unit: '' },
-  { value: totalHeures(themes), label: 'HEURES', unit: '+' },
+  { value: themes.length, label: 'THEMES', unit: '' },
+  { value: totalActivites(themes), label: 'ACTIVITIES', unit: '' },
+  { value: totalHeures(themes), label: 'HOURS', unit: '+' },
   { value: 1, label: 'HACKATHON', unit: '' },
 ]
 
@@ -65,7 +65,7 @@ export default function Home() {
               <span className="text-accent-cyan animate-blink">▶</span>
               <span className="text-accent-cyan opacity-50">BAC_3_TI</span>
               <span className="text-text-muted">/</span>
-              <span className="text-accent-cyan opacity-50">EPHEC_BRUXELLES</span>
+              <span className="text-accent-cyan opacity-50">EPHEC_BRUSSELS</span>
               <span className="text-text-muted">/</span>
               <span className="text-accent-cyan opacity-50">2025–2026</span>
             </div>
@@ -94,7 +94,7 @@ export default function Home() {
             {/* Divider */}
             <div className="t-divider" />
 
-            {/* Accroche */}
+            {/* Tagline */}
             <p className="text-text-secondary leading-relaxed mb-10 max-w-2xl text-sm md:text-base">
               {profile.accroche}
             </p>
@@ -107,7 +107,7 @@ export default function Home() {
               </Link>
               <Link to="/cv" className="btn-ghost">
                 <Download className="w-3.5 h-3.5" />
-                <span>TÉLÉCHARGER CV</span>
+                <span>DOWNLOAD CV</span>
               </Link>
             </div>
           </div>
@@ -145,10 +145,10 @@ export default function Home() {
       {/* ── OVERVIEW CARDS ─────────────────────────────────────────── */}
       <Section>
         <SectionHeader
-          label="Portfolio Académique EPHEC"
-          title="Structure du Portfolio"
+          label="EPHEC Academic Portfolio"
+          title="Portfolio Structure"
           index={1}
-          subtitle="Ce portfolio répond aux exigences EPHEC pour le BAC 3 TI — pages, analyses réflexives et conformité institutionnelle."
+          subtitle="This portfolio meets the EPHEC requirements for BAC 3 IT — pages, reflective analyses, and institutional compliance."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {overviewCards.map((card) => {
@@ -187,8 +187,8 @@ export default function Home() {
       {/* ── THEMES PREVIEW ─────────────────────────────────────────── */}
       <Section className="pt-0">
         <SectionHeader
-          label="Activités d'Acquisition de Compétences"
-          title="Les 7 Thèmes"
+          label="Skills Development Activities"
+          title="The 7 Themes"
           index={2}
           subtitle={syntheseGlobale.split('\n\n')[0]}
         />
@@ -237,7 +237,7 @@ export default function Home() {
             className="group t-card p-5 flex flex-col items-center justify-center gap-2 text-center"
           >
             <span className="font-mono text-xs text-text-muted group-hover:text-accent-cyan transition-colors">
-              voir_tout()
+              view_all()
             </span>
             <ArrowRight className="w-3.5 h-3.5 text-text-muted group-hover:text-accent-cyan transition-colors" />
           </Link>

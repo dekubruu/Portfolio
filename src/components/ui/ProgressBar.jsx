@@ -63,8 +63,8 @@ export function DeltaBar({ competence, avant, apres }) {
         />
       </div>
       <div className="flex justify-between font-mono text-xs text-text-muted">
-        <span>avant: {avant}%</span>
-        <span>après: {apres}%</span>
+        <span>before: {avant}%</span>
+        <span>after: {apres}%</span>
       </div>
     </div>
   )
