@@ -1,4 +1,6 @@
-export const syntheseGlobale = `Resume`
+export const syntheseGlobale = `This year I organized my skills development around six themes that reflect both my technical interests and the professional direction I am building toward. Rather than following a broad academic checklist, each activity was chosen because it filled a specific gap or confirmed a specific direction — systems and Linux, applied cybersecurity, professional discovery, cloud infrastructure, project management, and transversal safety skills.
+
+These activities complemented my internship at the Motion Picture Association and my academic training at EPHEC. Together, they document a progression that is concrete, hands-on, and coherent with my goal of becoming a full-stack developer with a strong security dimension.`
 export const themes = [
   // ─── THEME 1 ──────────────────────────────────────────────────────────────────
   {
