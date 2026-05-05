@@ -59,7 +59,7 @@ export default function Home() {
               <span className="text-accent-cyan animate-blink">▶</span>
               <span className="text-accent-cyan opacity-50">BAC_3_TI</span>
               <span className="text-text-muted">/</span>
-              <span className="text-accent-cyan opacity-50">EPHEC_BRUSSELS</span>
+              <span className="text-accent-cyan opacity-50">EPHEC_LOUVAIN_LA_NEUVE</span>
               <span className="text-text-muted">/</span>
               <span className="text-accent-cyan opacity-50">2025–2026</span>
             </div>
