@@ -36,7 +36,7 @@ export const themes = [
         "This activity directly supports my goal of working in IT infrastructure and system administration. It gave me practical experience with Linux systems, troubleshooting, and performance optimization — key skills for technical support and system roles. It also aligns with my objective of building a homelab using recycled hardware.",
 
       preuve:
-        ["public/image/hackaton_gta.png", "public/image/hackaton.png"],
+        ["/image/hackaton_gta.png", "/image/hackaton.png"],
     },
     ],
   },
@@ -82,7 +82,7 @@ This hands-on approach was far more impactful than theoretical courses, as it re
         "Although I do not aim to become a cybersecurity specialist, this experience is essential for my goal as a Full-Stack developer. It helps me integrate security into my development process and avoid common vulnerabilities, which is increasingly expected in professional environments.",
 
       preuve:
-        "public/image/Cyber.png",
+        ["/image/Cyber.png"],
     },
   ],
 },
@@ -124,7 +124,7 @@ I also understood that technical success is strongly linked to business understa
         "This experience supports my goal of becoming a Full-Stack developer by exposing me to real-world development practices, team organization, and the requirements of building scalable and production-ready applications.",
 
       preuve:
-        ["public/image/Odoo_repo.png","public/image/Odoo_repo1.png"],
+        ["/image/Odoo_repo.png","/image/Odoo_repo1.png"],
     },
 
     {
@@ -151,7 +151,7 @@ It also showed me the importance of understanding end-users’ needs, especially
         "This experience strengthens my infrastructure and IT engineering perspective by showing how systems are deployed in complex real-world environments. It also reinforces my interest in user-centered IT solutions and operational reliability.",
 
       preuve:
-        "public/image/SETT.png",
+        ["/image/SETT.png"],
     },
   ],
 },
@@ -195,7 +195,7 @@ I also realized that cloud computing is not optional anymore — it is a standar
         "This experience supports my goal of working in IT infrastructure and development. It gives me insight into real-world cloud environments and helps me understand how applications are deployed, managed, and secured in professional contexts.",
 
       preuve:
-        "public/image/Cloud.png",
+        ["/image/Cloud.png"],
     },
   ],
 },
@@ -237,7 +237,7 @@ Additionally, the project showed that innovation does not require new or expensi
         "This experience aligns with my goal of working in IT infrastructure and system administration. It provided hands-on experience with Linux systems, troubleshooting, and project management in real conditions, which are key skills for technical roles.",
 
       preuve:
-        "Functional media server demonstrated at the end of the hackathon (PS2 + Raspberry Pi 2 + Kodi), with final team presentation.",
+        ["/image/hackaton_gta.png", "/image/hackaton.png"],
     },
   ],
 },
@@ -279,7 +279,7 @@ Additionally, the project showed that innovation does not require new or expensi
         "Although not directly technical, this certification strengthens essential soft skills such as stress management, responsibility, and decision-making. These are critical in professional environments, especially in IT where incident response and problem management require similar composure and structured thinking.",
 
       preuve:
-        "public/image/BEPS.png",
+        ["/image/BEPS.png"],
       },
     ],
   },
