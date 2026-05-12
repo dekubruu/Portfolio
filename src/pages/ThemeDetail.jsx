@@ -108,20 +108,48 @@ function ActivityCard({ activite, hex, c }) {
         </ReflexiveBlock>
 
         {/* Proof */}
-        <div
-          className="flex items-start gap-3 px-4 py-3 font-mono text-xs"
-          style={{
-            background: 'rgba(255,255,255,0.02)',
-            border: '1px solid rgba(22,37,64,0.8)',
-            borderRadius: '3px',
-          }}
-        >
-          <ImageIcon className="w-3.5 h-3.5 text-text-muted flex-shrink-0 mt-0.5" />
-          <div>
-            <span className="text-text-muted tracking-widest block mb-1">proof_of_participation:</span>
-            <span className="text-text-secondary leading-relaxed">{activite.preuve}</span>
+        {activite.preuve && (
+          <div
+            className="px-4 py-4 font-mono text-xs"
+            style={{
+              background: 'rgba(255,255,255,0.02)',
+              border: '1px solid rgba(22,37,64,0.8)',
+              borderRadius: '3px',
+            }}
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <ImageIcon className="w-3.5 h-3.5 text-text-muted" />
+
+              <span className="text-text-muted tracking-widest">
+                proof_of_participation:
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {(Array.isArray(activite.preuve)
+                ? activite.preuve
+                : [activite.preuve]
+              ).map((img, i) => (
+                <img
+                  key={i}
+                  src={img}
+                  alt={`Proof ${i + 1}`}
+                  className="
+                    w-full
+                    rounded
+                    border
+                    border-white/10
+                    object-cover
+                    transition-all
+                    duration-300
+                    hover:scale-[1.01]
+                    hover:border-cyan-400/30
+                  "
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   )

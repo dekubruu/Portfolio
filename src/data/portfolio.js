@@ -4,8 +4,8 @@ These activities complemented my internship at the Motion Picture Association an
 export const themes = [
   // ─── THEME 1 ──────────────────────────────────────────────────────────────────
   {
-    id: 'developpement-web',
-    titre: 'Developepement Linux',
+    id: 'developpement-linux',
+    titre: 'Development Linux',
     icone: 'Code2',
     couleur: 'cyan',
     heuresTotal: 10,
@@ -14,7 +14,7 @@ export const themes = [
       'Hackathon Electro Upcycling Challenge 2025 : Retour vers le futur !',
     activites: [
       {
-        id: 'Hackathon 2025 EPhec',
+        id: 'Hackathon 2025 Ephec',
         titre: 'Hackathon Electro Upcycling Challenge 2025 : Retour vers le futur !',
         type: 'Hackathon',
         typeBadge: 'Ephec',
@@ -36,22 +36,22 @@ export const themes = [
         "This activity directly supports my goal of working in IT infrastructure and system administration. It gave me practical experience with Linux systems, troubleshooting, and performance optimization — key skills for technical support and system roles. It also aligns with my objective of building a homelab using recycled hardware.",
 
       preuve:
-        "Functional media server demonstrated at the end of the hackathon (PS2 + Raspberry Pi 2 + Kodi), with live presentation.",
+        ["public/image/hackaton_gta.png", "public/image/hackaton.png"],
     },
     ],
   },
 
 // ─── THEME 2 ──────────────────────────────────────────────────────────────────
 {
-  id: 'cybersecurite',
+  id: 'cybersecurity',
   titre: 'Cybersecurity',
   icone: 'Shield',
   couleur: 'orange',
   heuresTotal: 10,
-  nbActivites: 1,
+  nbActivites: 2,
   lienForce: "Identified weakness — strengthening my security awareness in development practices",
   resume:
-    "Participation in the Cybersecurity Challenge Belgium (twice), focusing on hands-on security problem solving.",
+    "Participation in the Cybersecurity Challenge Belgium, focusing on hands-on security problem solving.",
 
   activites: [
     {
@@ -59,7 +59,7 @@ export const themes = [
       titre: 'Cybersecurity Challenge Belgium (2 participations)',
       type: 'Competition',
       typeBadge: 'challenge',
-      date: '2025',
+      date: '2023 & 2025',
       heuresComptees: 10,
 
       contexte: `I participated twice in the Cybersecurity Challenge Belgium, a national competition designed to introduce students to real-world cybersecurity problems. The event is based on a Capture The Flag (CTF) format, where participants solve technical challenges in areas such as web security, cryptography, reverse engineering, and networking.
@@ -82,18 +82,18 @@ This hands-on approach was far more impactful than theoretical courses, as it re
         "Although I do not aim to become a cybersecurity specialist, this experience is essential for my goal as a Full-Stack developer. It helps me integrate security into my development process and avoid common vulnerabilities, which is increasingly expected in professional environments.",
 
       preuve:
-        "Participation records in the Cybersecurity Challenge Belgium (two editions), with solved challenges on the platform.",
+        "public/image/Cyber.png",
     },
   ],
 },
 
 // ─── THEME 3 ──────────────────────────────────────────────────────────────────
 {
-  id: 'cloud-devops',
-  titre: 'Découverte professionnelle',
+  id: 'visite professionnelle',
+  titre: 'Professional Discovery',
   icone: 'Cloud',
   couleur: 'blue',
-  heuresTotal: 10,
+  heuresTotal: 12,
   nbActivites: 2,
   lienForce: "Professional discovery — understanding how large-scale software companies and sector-specific IT ecosystems operate",
   resume:
@@ -124,7 +124,7 @@ I also understood that technical success is strongly linked to business understa
         "This experience supports my goal of becoming a Full-Stack developer by exposing me to real-world development practices, team organization, and the requirements of building scalable and production-ready applications.",
 
       preuve:
-        "Participation in the Odoo company visit — attendance confirmed via official registration and presence at the event.",
+        ["public/image/Odoo_repo.png","public/image/Odoo_repo1.png"],
     },
 
     {
@@ -151,14 +151,14 @@ It also showed me the importance of understanding end-users’ needs, especially
         "This experience strengthens my infrastructure and IT engineering perspective by showing how systems are deployed in complex real-world environments. It also reinforces my interest in user-centered IT solutions and operational reliability.",
 
       preuve:
-        "Participation in the SETT Expo visit at Namur Expo — attendance through on-site presence and engagement with exhibitors.",
+        "public/image/SETT.png",
     },
   ],
 },
 
 // ─── THEME 4 ──────────────────────────────────────────────────────────────────
 {
-  id: 'intelligence-artificielle',
+  id: 'cloud-computing',
   titre: 'Cloud computing',
   icone: 'Brain',
   couleur: 'purple',
@@ -195,19 +195,19 @@ I also realized that cloud computing is not optional anymore — it is a standar
         "This experience supports my goal of working in IT infrastructure and development. It gives me insight into real-world cloud environments and helps me understand how applications are deployed, managed, and secured in professional contexts.",
 
       preuve:
-        "Official attendance confirmation email for the conference — including speaker name, topic, date, and duration.",
+        "public/image/Cloud.png",
     },
   ],
 },
 
 // ─── THEME 5 ──────────────────────────────────────────────────────────────────
 {
-  id: 'gestion-projet',
-  titre: 'IT Education Event',
+  id: 'job etudiant',
+  titre: 'Student' ,
   icone: 'Layout',
   couleur: 'green',
-  heuresTotal: 10,
-  nbActivites: 1,
+  heuresTotal: 12,
+  nbActivites: 3,
   lienForce: "Project-based learning — developing technical and teamwork skills in real conditions",
   resume:
     "Participation in the Upscaling 2025 Hackathon: transforming a PlayStation 2 into a modern media server.",
@@ -244,11 +244,11 @@ Additionally, the project showed that innovation does not require new or expensi
 
 // ─── THEME 6 ──────────────────────────────────────────────────────────────────
 {
-  id: 'reseaux-systemes',
+  id: 'Brevet de secourisme',
   titre: 'First Aid Training',
   icone: 'Network',
   couleur: 'orange',
-  heuresTotal: 10,
+  heuresTotal: 15,
   nbActivites: 1,
   lienForce: "Transversal skill — ability to react effectively in emergency situations and ensure safety",
   resume:
@@ -279,7 +279,7 @@ Additionally, the project showed that innovation does not require new or expensi
         "Although not directly technical, this certification strengthens essential soft skills such as stress management, responsibility, and decision-making. These are critical in professional environments, especially in IT where incident response and problem management require similar composure and structured thinking.",
 
       preuve:
-        "Official European First Aid Certificate (BEPS) delivered on July 14, 2025 after completing the 15-hour training.",
+        "public/image/BEPS.png",
       },
     ],
   },

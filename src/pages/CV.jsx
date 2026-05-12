@@ -70,7 +70,7 @@ export default function CV() {
           className="btn-primary flex items-center gap-2"
         >
           <Eye className="w-3.5 h-3.5" />
-          Preview CV
+          Open CV
         </a>
         {/* Download */}
         <a
