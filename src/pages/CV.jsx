@@ -1,7 +1,8 @@
-import { Download, Mail, Phone, MapPin, Github, Linkedin, ExternalLink } from 'lucide-react'
+import { Download, Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Eye } from 'lucide-react'
 import { profile } from '../data/profile'
 import Section, { SectionHeader } from '../components/ui/Section'
 import ProgressBar from '../components/ui/ProgressBar'
+
 
 function Tag({ children }) {
   return (
@@ -58,16 +59,31 @@ export default function CV() {
       <Section>
         <SectionHeader label="Curriculum Vitae" title="My Background" index={0} />
 
+      {/* Download + Preview */}
+      <div className="mb-10 flex flex-wrap items-center gap-4">
+
+                {/* Preview */}
+        <a
+          href="/image/cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary flex items-center gap-2"
+        >
+          <Eye className="w-3.5 h-3.5" />
+          Preview CV
+        </a>
         {/* Download */}
-        <div className="mb-10">
-          <a
-            href="/image/cv.pdf"
-            download="AKTAMIROV KHASAN CV 2026.pdf"
-            className="btn-primary flex items-center gap-2"
-          >
-            <Download className="w-3.5 h-3.5" /> Download CV PDF
-          </a>
-        </div>
+        <a
+          href="/image/cv.pdf"
+          download="AKTAMIROV KHASAN CV 2026.pdf"
+          className="btn-primary flex items-center gap-2"
+        >
+          <Download className="w-3.5 h-3.5" />
+          Download CV PDF
+        </a>
+
+
+      </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* ── LEFT ─────────────────────────────── */}
